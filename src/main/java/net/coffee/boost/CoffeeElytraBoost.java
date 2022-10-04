@@ -15,12 +15,8 @@ import net.minecraft.util.math.MathHelper;
 
 public class CoffeeElytraBoost implements ModInitializer {
 	private static KeyBinding keyBinding;
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod id as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
+
 	public static final Logger LOGGER = LoggerFactory.getLogger("modid");
-	
-	// client.player.setPitch(40);
 
 	@Override public void onInitialize() {
 
