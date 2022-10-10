@@ -31,12 +31,14 @@ public class CoffeeElytraBoost implements ModInitializer {
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
 			while (keyBinding.wasPressed()) {
 			float yaw = (float) Math.toRadians(client.player.getYaw()); 
+				if (client.player.isFallFlying()) {
                      client.player.addVelocity(MathHelper.sin(yaw) * -0.05F, 0, MathHelper.cos(yaw) * 0.05F);
-			
+				}
 			}
 		});
 	}
 }
+
 	
 	
 
